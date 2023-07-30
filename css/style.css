@@ -618,23 +618,7 @@ input:checked+.slider:before {
 	animation-fill-mode: forwards;
 }
 
-.slideFromRight {
-	animation-name: slideFromRight;
-	animation-duration: 1200ms;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
-}
-
-.slideFromLeft {
-	animation-name: slideFromLeft;
-	animation-duration: 1200ms;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
-}
-
-.hidden,
-.hidden-right,
-.hidden-left {
+.hidden {
 	opacity: 0;
 }
 
@@ -680,36 +664,11 @@ input:checked+.slider:before {
 	}
 }
 
-@keyframes slideFromRight {
-	from {
-		transform: translateX(100%);
-		opacity: 0;
-	}
-
-	to {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-
-@keyframes slideFromLeft {
-	from {
-		transform: translateX(-100%);
-		opacity: 0;
-	}
-
-	to {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-
 /* others */
 .container {
 	max-width: 1200px;
 	margin-inline: auto;
 	margin: 0 auto;
-	max-width: 1200px;
 	padding: 1rem;
 }
 

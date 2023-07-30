@@ -79,8 +79,6 @@ function isElementVisible(el) {
 // Function to add animation class when element is visible
 function animateOnScroll() {
   var elements = document.querySelectorAll('.hidden');
-  var elementsleft = document.querySelectorAll('.hidden-left');
-  var elementsright = document.querySelectorAll('.hidden-right');
 
   elements.forEach(function (element) {
     if (isElementVisible(element)) {
@@ -88,17 +86,6 @@ function animateOnScroll() {
     }
   });
 
-  elementsleft.forEach(function (element) {
-    if (isElementVisible(element)) {
-      element.classList.add('slideFromLeft');
-    }
-  });
-
-  elementsright.forEach(function (element) {
-    if (isElementVisible(element)) {
-      element.classList.add('slideFromRight');
-    }
-  });
 }
 
 // Check element visibility when page loads and when scrolling
