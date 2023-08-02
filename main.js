@@ -87,16 +87,5 @@ function animateOnScroll() {
   });
 
 }
-
-// Check element visibility when page loads and when scrolling
 document.addEventListener('DOMContentLoaded', animateOnScroll);
 window.addEventListener('scroll', animateOnScroll);
-
-const menuIcon = document.querySelector('.menu-icon');
-const mobileMenu = document.querySelector('.mobile-menu');
-const navbar = document.querySelector('.navbar');
-
-menuIcon.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-  navbar.classList.toggle('menu-open');
-});

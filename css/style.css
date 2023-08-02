@@ -58,8 +58,8 @@
 
 /* Main  */
 body {
-	font-family: -apple-system, BlinkMacSystemFont,'Fira Sans', 'cursive',
-		'system-ui','Ubuntu','Montserrat', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'cursive',
+		'system-ui', 'Ubuntu', 'Montserrat', sans-serif;
 	font-size: clamp(1.4rem, 1vw, 1.6rem);
 	line-height: 1.6;
 	background: var(--primary-clr);
@@ -477,6 +477,9 @@ input:checked+.slider:before {
 
 /* Responsive mode */
 @media screen and (max-width: 50em) {
+	body{
+		overflow-x: hidden;
+	}
 	body::after {
 		position: absolute;
 		content: '';
@@ -529,16 +532,12 @@ input:checked+.slider:before {
 	.navbar .nav-menu {
 		display: none;
 		position: absolute;
-		background-color: var(--secondary-clr);
 		box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
 		flex-direction: column;
 		right: 0;
-		z-index: 20;
 		height: 100vh;
 		width: 100%;
 		backdrop-filter: blur(30px) saturate(1);
-		transition-duration: 0.5s;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		background-color: rgba(0, 0, 0, 0.3);
 		color: var(--accent-clr);
 	}
@@ -575,8 +574,35 @@ input:checked+.slider:before {
 		cursor: pointer;
 	}
 
-	.fa-bar-color {
-		color: var(--accent-clr);
+	.menu-icon div {
+		width: 32px;
+		height: 2px;
+		background-color: var(--accent-clr);
+		margin: 8px;
+		transition: 0x3s;
+	}
+
+	@keyframes navLinkFade{
+		from{
+			opacity: 0;
+			transform: translate(50px);
+		}
+		to{
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+
+	.menu-icon.active .line1{
+		transform: rotate(-45deg) translate(-8px, 8px);
+	}
+
+	.menu-icon.active .line2{
+		opacity: 0;
+	}
+
+	.menu-icon.active .line3{
+		transform: rotate(45deg) translate(-5px, -7px);
 	}
 
 }
