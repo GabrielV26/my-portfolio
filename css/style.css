@@ -296,7 +296,7 @@ input:checked+.slider:before {
 }
 
 .about-me img {
-	width: fit-content;
+	width: -webkit-fill-available;
 }
 
 .about {
