@@ -306,6 +306,7 @@ input:checked+.slider:before {
 .about p {
 	padding-block-start: 2rem;
 	line-height: 1.8;
+	text-align: justify;
 }
 
 /* My skills */
@@ -377,6 +378,7 @@ input:checked+.slider:before {
 .project p {
 	padding-block-start: 1.5rem;
 	max-width: 500px;
+	text-align: justify;
 }
 
 .tech-stack,
@@ -699,6 +701,7 @@ input:checked+.slider:before {
 	font-size: 1.35rem;
 	padding-block-start: 1.3rem;
 	color: var(--other-clr);
+	text-align: justify;
 }
 
 .btn {
