@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800;900&display=swap');
 
 :root {
 	--primary-clr: hsl(0, 0%, 100%);
@@ -60,7 +59,7 @@
 
 /* Main  */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'cursive',
+	font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'cursive',
 		'system-ui', 'Ubuntu', 'Montserrat', sans-serif;
 	font-size: clamp(1.4rem, 1vw, 1.6rem);
 	line-height: 1.6;
